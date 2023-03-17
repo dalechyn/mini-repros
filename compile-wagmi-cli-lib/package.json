@@ -1,0 +1,23 @@
+{
+  "name": "compile-wagmi-cli-lib",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/wagmi.config.js",
+  "types": "dist/wagmi.config.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && npm exec wagmi generate && tsc"
+  },
+  "dependencies": {
+    "@wagmi/cli": "^0.1.13",
+    "ethers": "^5.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wagmi": "^0.12.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.3",
+    "typescript": "^4.9.4"
+  }
+}
