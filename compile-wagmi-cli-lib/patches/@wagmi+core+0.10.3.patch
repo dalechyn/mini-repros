@@ -1,0 +1,13 @@
+diff --git a/node_modules/@wagmi/core/dist/index.d.ts b/node_modules/@wagmi/core/dist/index.d.ts
+index a47d563..7373f65 100644
+--- a/node_modules/@wagmi/core/dist/index.d.ts
++++ b/node_modules/@wagmi/core/dist/index.d.ts
+@@ -1186,7 +1186,7 @@ type InterfaceEvents<TAbi extends Abi> = UnionToIntersection<{
+         [K in AbiItemName<TAbiEvent, true>]: ethers.utils.EventFragment;
+     } : never;
+ }[number]>;
+-interface EventListener<TAbi extends Abi> {
++export interface EventListener<TAbi extends Abi> {
+     <TEventName extends ExtractAbiEventNames<TAbi>>(eventName: TEventName, listener: Listener<TAbi, TEventName>): Contract<TAbi>;
+     (eventFilter: ethers.EventFilter, listener: Listener<TAbi, ExtractAbiEventNames<TAbi>>): Contract<TAbi>;
+ }
