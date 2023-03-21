@@ -5,16 +5,14 @@
   "main": "dist/wagmi.config.js",
   "types": "dist/wagmi.config.d.ts",
   "scripts": {
-    "build": "rm -rf dist && npm exec wagmi generate && tsc",
-    "postinstall": "patch-package"
+    "build": "rm -rf dist && npm exec wagmi generate && tsc"
   },
   "dependencies": {
     "@wagmi/cli": "^0.1.14",
     "ethers": "^5.7.2",
-    "patch-package": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "wagmi": "^0.12.3"
+    "wagmi": "^0.12.4"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",
